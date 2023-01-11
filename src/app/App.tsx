@@ -1,14 +1,19 @@
 import React from "react";
 import "./App.css";
-import Sunrise from "@public/sunrise.jpg";
+import { About } from "../components/about/About";
+import { Skills } from "../components/skills/Skills";
+import { Portfolio } from "../components/portfolio/Portfolio";
+import { Contact } from "../components/contact/Contact";
+import { Navbar } from "../routes/Navbar";
 
 export const App = (): JSX.Element => {
     return (
         <React.Fragment>
-            <img 
-                src={Sunrise} alt="Sunrise"
-                height="600px" width="auto" 
-            />
+            <Navbar />
+            <About />
+            <Skills />
+            <Portfolio />
+            <Contact />
         </React.Fragment>
     );
 };
